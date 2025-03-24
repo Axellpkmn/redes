@@ -1,0 +1,501 @@
+body {
+  background: rgb(189, 117, 161);
+  background: linear-gradient(180deg, rgba(189, 117, 161, 1) 8%, rgba(122, 86, 119, 1) 20%, rgba(0, 127, 135, 1) 87%);
+}
+
+@font-face {
+  font-family: termina;
+  src: url(fonts/Termina/TerminaTest-Bold.otf);
+}
+
+.slide_diagonal:hover {
+  box-shadow: inset 400px 0 0 0 #ffffff;
+  -webkit-transition: ease-out 0.6s;
+  -moz-transition: ease-out 0.6s;
+  transition: ease-out 0.6s;
+}
+
+.slide_diagonal2:hover {
+  box-shadow: inset 400px 0 0 0 #000000;
+  -webkit-transition: ease-out 0.6s;
+  -moz-transition: ease-out 0.6s;
+  transition: ease-out 0.6s;
+}
+
+.card {
+  width: 190px;
+  height: 254px;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 9px 9px 30px 2px #000000, 6px 7px 20px 0px #000000;
+}
+
+
+
+/* glitch */
+
+
+.efecto-glitch {
+  /*propiedades para hacer el efecto "responsivo"*/
+  max-width: 500px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  /*Propiedades background css3 para que el fondo sea "responsivo"*/
+  background: url(glitch/glitch-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /*Propiedad Animacion CSS*/
+  -webkit-animation:
+    /*Dos grupos de animaciones*/
+    glitch 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite,
+    glitchMotion 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite;
+  animation:
+    /*Dos grupos de animaciones*/
+    glitch 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite,
+    glitchMotion 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite;
+}
+
+.efecto-glitch img {
+  /*la imagen oculta es la que otorga una altura proporcional al div*/
+  width: 8em;
+  height: auto;
+  vertical-align: middle;
+  opacity: 0;
+}
+
+@-webkit-keyframes glitch {
+
+  /*Nosotros especificamos el intervalo de tiempo en el que queremos que las imagenes de fondo cambien.*/
+
+  0% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+  }
+
+  1.5% {
+    background: url(glitch/glitch-6.png) no-repeat;
+    background-size: contain;
+  }
+
+  1.6% {
+    background: url(glitch/glitch-3.png) no-repeat;
+    background-size: contain;
+  }
+
+  1.7% {
+    background: url(glitch/glitch-5.png) no-repeat;
+    background-size: contain;
+  }
+
+  1.8% {
+    background: url(glitch/glitch-2.png) no-repeat;
+    background-size: contain;
+  }
+
+  1.9% {
+    background: url(glitch/glitch-6.png) no-repeat;
+    background-size: contain;
+  }
+
+  2% {
+    background: url(glitch/glitch-3.png) no-repeat;
+    background-size: contain;
+  }
+
+  2.3% {
+    background: url(glitch/glitch-5.png) no-repeat;
+    background-size: contain;
+  }
+
+  2.5% {
+    background: url(glitch/glitch-6.png) no-repeat;
+    background-size: contain;
+  }
+
+  3% {
+    background: url(glitch/glitch-2.png) no-repeat;
+    background-size: contain;
+  }
+
+  5% {
+    background: url(glitch/glitch-4.png) no-repeat;
+    background-size: contain;
+  }
+
+
+  7.6% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+  }
+
+  7.7% {
+    background: url(glitch/glitch-6.png) no-repeat;
+    background-size: contain;
+  }
+
+  7.8% {
+    background: url(glitch/glitch-2.png) no-repeat;
+    background-size: contain;
+  }
+
+  7.9% {
+    background: url(glitch/glitch-3.png) no-repeat;
+    background-size: contain;
+  }
+
+  8% {
+    background: url(glitch/glitch-6.png) no-repeat;
+    background-size: contain;
+  }
+
+  8.3% {
+    background: url(glitch/glitch-4.png) no-repeat;
+    background-size: contain;
+  }
+
+  8.5% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+  }
+
+
+
+  14.9% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+  }
+
+  15.5% {
+    background: url(glitch/glitch-6.png) no-repeat;
+    background-size: contain;
+  }
+
+  15.7% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+  }
+
+
+
+  40.9% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+  }
+
+  41.5% {
+    background: url(glitch/glitch-3.png) no-repeat;
+    background-size: contain;
+  }
+
+  42% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+  }
+
+  70.9% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+  }
+
+  71.5% {
+    background: url(glitch/glitch-5.png) no-repeat;
+    background-size: contain;
+  }
+
+  71.8% {
+    background: url(glitch/glitch-6.png) no-repeat;
+    background-size: contain;
+  }
+
+  72% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+  }
+
+
+}
+
+@keyframes glitch {
+
+  /*Nosotros especificamos el intervalo de tiempo en el que queremos que las imagenes de fondo cambien.*/
+
+  0% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+  }
+
+  1.5% {
+    background: url(glitch/glitch-6.png) no-repeat;
+    background-size: contain;
+  }
+
+  1.6% {
+    background: url(glitch/glitch-3.png) no-repeat;
+    background-size: contain;
+  }
+
+  1.7% {
+    background: url(glitch/glitch-5.png) no-repeat;
+    background-size: contain;
+  }
+
+  1.8% {
+    background: url(glitch/glitch-2.png) no-repeat;
+    background-size: contain;
+  }
+
+  1.9% {
+    background: url(glitch/glitch-6.png) no-repeat;
+    background-size: contain;
+  }
+
+  2% {
+    background: url(glitch/glitch-3.png) no-repeat;
+    background-size: contain;
+  }
+
+  2.3% {
+    background: url(glitch/glitch-5.png) no-repeat;
+    background-size: contain;
+  }
+
+  2.5% {
+    background: url(glitch/glitch-6.png) no-repeat;
+    background-size: contain;
+  }
+
+  3% {
+    background: url(glitch/glitch-2.png) no-repeat;
+    background-size: contain;
+  }
+
+  5% {
+    background: url(glitch/glitch-4.png) no-repeat;
+    background-size: contain;
+  }
+
+
+  7.6% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+  }
+
+  7.7% {
+    background: url(glitch/glitch-6.png) no-repeat;
+    background-size: contain;
+  }
+
+  7.8% {
+    background: url(glitch/glitch-2.png) no-repeat;
+    background-size: contain;
+  }
+
+  7.9% {
+    background: url(glitch/glitch-3.png) no-repeat;
+    background-size: contain;
+  }
+
+  8% {
+    background: url(glitch/glitch-6.png) no-repeat;
+    background-size: contain;
+  }
+
+  8.3% {
+    background: url(glitch/glitch-4.png) no-repeat;
+    background-size: contain;
+  }
+
+  8.5% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+  }
+
+
+
+  14.9% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+  }
+
+  15.5% {
+    background: url(glitch/glitch-6.png) no-repeat;
+    background-size: contain;
+  }
+
+  15.7% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+  }
+
+
+
+  40.9% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+  }
+
+  41.5% {
+    background: url(glitch/glitch-3.png) no-repeat;
+    background-size: contain;
+  }
+
+  42% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+  }
+
+  70.9% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+  }
+
+  71.5% {
+    background: url(glitch/glitch-5.png) no-repeat;
+    background-size: contain;
+  }
+
+  71.8% {
+    background: url(glitch/glitch-6.png) no-repeat;
+    background-size: contain;
+  }
+
+  72% {
+    background: url(glitch/glitch-0.png) no-repeat;
+    background-size: contain;
+  }
+
+
+}
+
+@-webkit-keyframes glitchMotion {
+
+  /*Una segunda animacion para crear el efecto de movimiento, tambien puede ir dentro de la primera animacion pero preferi hacerlas por separado*/
+
+  7% {
+    transform: translateX(0);
+  }
+
+  7.5% {
+    transform: translateX(0) translateY(5px);
+  }
+
+  7.9% {
+    transform: translateX(0) translateY(0);
+  }
+
+  40% {
+    transform: translateX(0);
+  }
+
+  40.5% {
+    transform: translateX(-12px) translateY(0);
+  }
+
+  40.9% {
+    transform: translateX(0) translateY(0);
+  }
+
+  70% {
+    transform: translateX(0);
+  }
+
+  70.5% {
+    transform: translateX(5px) translateY(0);
+  }
+
+  70.9% {
+    transform: translateX(0) translateY(0);
+  }
+
+}
+
+@keyframes glitchMotion {
+
+  /*Una segunda animacion para crear el efecto de movimiento, tambien puede ir dentro de la primera animacion pero preferi hacerlas por separado*/
+
+  7% {
+    transform: translateX(0);
+  }
+
+  7.5% {
+    transform: translateX(0) translateY(5px);
+  }
+
+  7.9% {
+    transform: translateX(0) translateY(0);
+  }
+
+  40% {
+    transform: translateX(0);
+  }
+
+  40.5% {
+    transform: translateX(-12px) translateY(0);
+  }
+
+  40.9% {
+    transform: translateX(0) translateY(0);
+  }
+
+  70% {
+    transform: translateX(0);
+  }
+
+  70.5% {
+    transform: translateX(5px) translateY(0);
+  }
+
+  70.9% {
+    transform: translateX(0) translateY(0);
+  }
+
+}
+
+
+/* Efecto nav Scroll */
+
+/* Transición a iconos más pequeños */
+
+.social-icon {
+  transition: all 0.3s ease;
+}
+
+.social-icon.shrink {
+  width: 5em;
+  height: 5em;
+  margin: 0em;
+  border-radius: 50%;
+  background-color: transparent;
+  color: transparent;
+  padding: 0;
+}
+
+.fondo-scroll{
+  background-color: black;
+  border-radius: 2.75em;
+}
+
+.social-icon.shrink .icon-text {
+  display: none;
+}
+
+.social-icon.shrink .icon-img {
+  height: 2em;
+}
+
+/* Posicionamiento fijo */
+.fixed-nav.fixed {
+  position: fixed;
+  top: 20%;
+  left: 89%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  margin-top: 1em;
+}
+
+.hidden {
+display: none;
+}

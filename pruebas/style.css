@@ -1,0 +1,82 @@
+/* Estilos generales */
+.fixed-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+}
+
+/* Contenedor de los íconos, inicialmente no tiene fondo negro */
+.social-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  transition: all 0.3s ease;
+  width: 100%;  /* El contenedor ocupará todo el ancho */
+  padding: 1em 0; /* Padding para crear espacio entre los iconos y los bordes */
+}
+
+/* Estilos para los iconos */
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: transparent; /* Fondo transparente por defecto */
+  color: white;
+  border-radius: 2.75em;
+  padding: 0.5em;
+  transition: all 0.3s ease;
+}
+
+/* Icono y texto */
+.social-icon .icon-img {
+  height: 3em;
+  margin: 0.5em 1em;
+}
+
+.social-icon .icon-text {
+  font-weight: bold;
+  font-size: 2em;
+  margin-left: 0.5em;
+  margin-right: 2.5em;
+}
+
+/* Cuando se hace scroll, el contenedor recibe fondo negro y los iconos se hacen pequeños */
+.social-icon-wrapper.shrink {
+  background-color: black; /* Fondo negro */
+  width: 100%;  /* El contenedor sigue ocupando todo el ancho */
+  justify-content: space-around; /* Distribuye los iconos */
+}
+
+.social-icon-wrapper.shrink .social-icon {
+  width: auto; /* El ancho del icono ajustado automáticamente */
+  height: 5em;
+  border-radius: 50%; /* Caja redonda */
+  padding: 0.5em;
+}
+
+.social-icon-wrapper.shrink .icon-text {
+  display: none; /* Ocultamos el texto */
+}
+
+.social-icon-wrapper.shrink .icon-img {
+  height: 2em; /* Reducimos el tamaño de los iconos */
+}
+
+/* Posicionamiento fijo */
+.fixed-nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%; /* Aseguramos que ocupe todo el ancho */
+  margin-top: 1em;
+  flex-direction: row;
+  background-color: black; /* Fondo negro cuando está fijo */
+  padding: 0.5em 0; /* Un poco de espacio arriba y abajo */
+}
