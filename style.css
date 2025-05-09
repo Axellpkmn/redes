@@ -3,6 +3,10 @@ body {
   background: linear-gradient(180deg, rgba(189, 117, 161, 1) 8%, rgba(122, 86, 119, 1) 20%, rgba(0, 127, 135, 1) 87%);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: termina;
   src: url(fonts/Termina/TerminaTest-Bold.otf);
@@ -25,9 +29,8 @@ body {
 .card {
   width: 190px;
   height: 254px;
-  border-radius: 30px;
+  border-radius: 10px;
   background: #e0e0e0;
-  box-shadow: 9px 9px 30px 2px #000000, 6px 7px 20px 0px #000000;
 }
 
 
